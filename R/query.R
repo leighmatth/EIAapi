@@ -111,7 +111,7 @@ eia_get <- function(api_key,
     for(i in names(facets)){
       for(l in facets[[i]]){
       f <- paste(f,
-                 sprintf("&facets[%s][]=%s", i, l),
+                 sprintf("&facets%%5B%s%%5D[]=%s", i, l),
                  sep = "")
       }
     }
